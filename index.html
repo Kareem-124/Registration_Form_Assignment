@@ -1,0 +1,123 @@
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        strong{
+            color: red;
+        }
+        .offset {
+            width: 400px;
+            margin: 10px;
+           /* border-style: solid; */
+            position: relative;
+        }
+        
+        input[type=text], input[type=password], input[type=date], select{
+            position:absolute;
+            right: 5px;
+            width: 60%;
+
+        }
+        textarea{
+            margin: auto;
+
+        }
+
+        .button{
+            width: 50%;
+            height: 5%;
+            background-color: rgba(127, 255, 212, 0.41);
+            border: 1px solid;
+            font-size: 1rem;
+            border-radius: 0.5rem;
+            border-color: rgba(127, 255, 212, 0.41) ;
+            margin-left: 15%;
+            box-shadow: 3px 3px 10px rgba(74, 73, 73, 0.178);
+        }
+        input[type=submit]:hover{
+            background-color: rgba(127, 255, 212, 1);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <div class="offset">
+        <label>First Name: <strong>*</strong></label>
+        <input type="text" name="first_name" >
+    </div>
+
+    <div class="offset"> 
+        <label >Last Name: <strong>*</strong></label>
+        <input type="text" name="last_name" >
+    </div>
+
+    <div class="offset">
+        <label>Email Address:  <strong>*</strong></label>
+        <input type="text" name="email"  >
+    </div>
+
+    <div class="offset">
+        <label>Password:  <strong>*</strong></label>
+        <input type="password" name="password"  >
+    </div>
+
+    <div class="offset">
+        <label>Confirm Password:  <strong>*</strong></label>
+        <input type="password" name="Confirm_password"  >
+    </div>
+
+    <div class="offset">
+        <label>Birthday:  <strong>*</strong></label>
+        <input type="date" name="Birthday"  >
+    </div>
+
+    <div class="offset">
+        <label>Gender Identity:</label>
+        <br>
+
+        <input type="radio" name="Gender" value="Male" id="Male" >
+        <label for="Male">Male</label>
+        <input type="radio" name="Gender" value="Female" id="Female"  >
+        <label for="Female">Female</label>
+        <input type="radio" name="Gender" value="nothing" id="nothing"  >
+        <label for="nothing">I prefare not to say</label>
+    </div>
+
+    <div class="offset">
+        <label>A short disciption about myself:</label>
+        <br>
+        <br>
+        <textarea name="comment" cols="52" rows="9" ></textarea>
+    </div>
+
+    <div class="offset">
+        <label>Favourit language:</label>
+        <select name="language" style="background-color:rgba(127, 255, 212, 0.41);">
+            <option value="Java" style="background-color:rgba(127, 255, 212, 0.41);">Java</option>
+            <option value="C++">C++</option>
+            <option value="Python">Python</option>
+        </select>
+    </div>
+
+    <div class="offset">
+        <input type="checkbox" name="agree" value="agree" >
+        <label for="agree">I want to recive perodicly updates</label>
+    </div>
+
+    <div class="offset">
+        <input type="submit"  value="Submit Form" class="button">
+        
+    </div>
+
+    <h5><strong > <strong>*</strong></strong> indicates a reqired feild</h5>
+
+
+</body>
+
+
+
+
+
+
+</html>
